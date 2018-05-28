@@ -1,0 +1,314 @@
+msgid  "RBK_MONEY_TRANSACTIONS"
+msgstr "Transactions"
+
+msgid  "RBK_MONEY_SAVE"
+msgstr "Save"
+
+msgid  "RBK_MONEY_RESET"
+msgstr "Reset"
+
+msgid  "RBK_MONEY_NEXT"
+msgstr "Next"
+
+msgid  "RBK_MONEY_PAY"
+msgstr "Pay"
+
+msgid  "RBK_MONEY_PREVIOUS"
+msgstr "Previous"
+
+msgid  "RBK_MONEY_WRONG_VALUE"
+msgstr "Wrong value"
+
+msgid  "RBK_MONEY_WRONG_SIGNATURE"
+msgstr "Wrong signature"
+
+msgid  "RBK_MONEY_INSTALLATION_SUCCESS"
+msgstr "Module installation was successful"
+
+msgid  "RBK_MONEY_SETTINGS"
+msgstr "Settings"
+
+msgid  "RBK_MONEY_RECURRENT"
+msgstr "Recurrent payments"
+
+msgid  "RBK_MONEY_RECURRENT_ITEMS"
+msgstr "Items for recurrent payments"
+
+msgid  "RBK_MONEY_API_KEY"
+msgstr "API key"
+
+msgid  "RBK_MONEY_ITEM_IDS"
+msgstr "Articles of products for recurrent payments"
+
+msgid  "RBK_MONEY_SHOP_ID"
+msgstr "Shop ID"
+
+msgid  "RBK_MONEY_SUCCESS_PAGE_ID"
+msgstr "Successful payment page ID"
+
+msgid  "RBK_MONEY_PAYMENT_TYPE"
+msgstr "Payment type"
+
+msgid  "RBK_MONEY_SHOW_PARAMETER"
+msgstr "Yes"
+
+msgid  "RBK_MONEY_NOT_SHOW_PARAMETER"
+msgstr "No"
+
+msgid  "RBK_MONEY_CARD_HOLDER"
+msgstr "Show cardholder on payment form"
+
+msgid  "RBK_MONEY_HOLD_EXPIRATION"
+msgstr "Write-off at the end of the holding period"
+
+msgid  "RBK_MONEY_PROCESSED"
+msgstr "Processed"
+
+msgid  "RBK_MONEY_PAID"
+msgstr "Paid"
+
+msgid  "RBK_MONEY"
+msgstr "RBKmoney"
+
+msgid  "RBK_MONEY_ERROR_SHOP_ID_IS_NOT_VALID"
+msgstr "Invalid value of the `shopID` parameter"
+
+msgid  "RBK_MONEY_ERROR_API_KEY_IS_NOT_VALID"
+msgstr "Invalid value of the `apiKey` parameter"
+
+msgid  "RBK_MONEY_ERROR_SUCCESS_URL_IS_NOT_VALID"
+msgstr "Invalid value of the `successUrl` parameter"
+
+msgid  "RBK_MONEY_ERROR_PAYMENT_TYPE_IS_NOT_VALID"
+msgstr "Invalid value of the `paymentType` parameter"
+
+msgid  "RBK_MONEY_ERROR_HOLD_STATUS_IS_NOT_VALID"
+msgstr "Invalid value of the `holdStatus` parameter"
+
+msgid  "RBK_MONEY_ERROR_AMOUNT_IS_NOT_VALID"
+msgstr "Invalid value of the `amount` parameter"
+
+msgid  "RBK_MONEY_ERROR_HOLD_EXPIRATION_IS_NOT_VALID"
+msgstr "Invalid value of the `holdExpiration` parameter"
+
+msgid  "RBK_MONEY_ERROR_TAX_RATE_IS_NOT_VALID"
+msgstr "Invalid value `VAT rate` for product: "
+
+msgid  "RBK_MONEY_PAYMENT_TYPE_HOLD"
+msgstr "Hold"
+
+msgid  "RBK_MONEY_PAYMENT_TYPE_INSTANTLY"
+msgstr "Write-off instantly"
+
+msgid  "RBK_MONEY_EXPIRATION_PAYER"
+msgstr "Payer"
+
+msgid  "RBK_MONEY_EXPIRATION_SHOP"
+msgstr "Shop"
+
+msgid  "RBK_MONEY_RECURRENT_DELETED"
+msgstr "Recurrent payment deleted"
+
+msgid  "RBK_MONEY_DATE_FILTER_FROM"
+msgstr "Date from"
+
+msgid  "RBK_MONEY_DATE_FILTER_TO"
+msgstr "Date to"
+
+msgid  "RBK_MONEY_FILTER_SUBMIT"
+msgstr "Search"
+
+msgid  "RBK_MONEY_TRANSACTION_ID"
+msgstr "ID"
+
+msgid  "RBK_MONEY_TRANSACTION_PRODUCT"
+msgstr "Product"
+
+msgid  "RBK_MONEY_TRANSACTION_STATUS"
+msgstr "Status"
+
+msgid  "RBK_MONEY_TRANSACTION_AMOUNT"
+msgstr "Amount"
+
+msgid  "RBK_MONEY_TRANSACTION_CREATED_AT"
+msgstr "Created at"
+
+msgid  "RBK_MONEY_PAYMENT_CONFIRMED"
+msgstr "Payment confirmed"
+
+msgid  "RBK_MONEY_PAYMENT_CANCELLED"
+msgstr "Payment cancelled"
+
+msgid  "RBK_MONEY_REFUND_CREATED"
+msgstr "Payment refund created"
+
+msgid  "RBK_MONEY_PAYMENT_CAPTURE_ERROR"
+msgstr "Payment confirmation error"
+
+msgid  "RBK_MONEY_PAYMENT_CANCELLED_ERROR"
+msgstr "Payment cancelled error"
+
+msgid  "RBK_MONEY_REFUND_CREATE_ERROR"
+msgstr "Refund create error"
+
+msgid  "RBK_MONEY_USER_FIELD"
+msgstr "User"
+
+msgid  "RBK_MONEY_AMOUNT_FIELD"
+msgstr "Amount"
+
+msgid  "RBK_MONEY_PRODUCT_FIELD"
+msgstr "Product"
+
+msgid  "RBK_MONEY_RECURRENT_CREATE_DATE"
+msgstr "Created at"
+
+msgid  "RBK_MONEY_FORM_BUTTON_DELETE"
+msgstr "Delete"
+
+msgid  "RBK_MONEY_FISCALIZATION"
+msgstr "Fiscalization (54 Federal Law)"
+
+msgid  "RBK_MONEY_PARAMETER_USE"
+msgstr "Use"
+
+msgid  "RBK_MONEY_PARAMETER_NOT_USE"
+msgstr "Don't use"
+
+msgid  "RBK_MONEY_ORDER_PAYMENT"
+msgstr "Order payment"
+
+msgid  "RBK_MONEY_ORDER_PENDING"
+msgstr "Your order is pending payment. Go to the"
+
+msgid  "RBK_MONEY_WEBSITE"
+msgstr "website"
+
+msgid  "RBK_MONEY_STATUS_STARTED"
+msgstr "started"
+
+msgid  "RBK_MONEY_STATUS_PROCESSED"
+msgstr "processed"
+
+msgid  "RBK_MONEY_STATUS_CAPTURED"
+msgstr "captured"
+
+msgid  "RBK_MONEY_STATUS_CANCELLED"
+msgstr "cancelled"
+
+msgid  "RBK_MONEY_STATUS_CHARGED_BACK"
+msgstr "charged back"
+
+msgid  "RBK_MONEY_STATUS_REFUNDED"
+msgstr "refunded"
+
+msgid  "RBK_MONEY_STATUS_FAILED"
+msgstr "failed"
+
+msgid  "RBK_MONEY_REFUNDED_BY_ADMIN"
+msgstr "Refunded by admin"
+
+msgid  "RBK_MONEY_CANCELLED_BY_ADMIN"
+msgstr "Cancelled by admin"
+
+msgid  "RBK_MONEY_CAPTURED_BY_ADMIN"
+msgstr "Captured by admin"
+
+msgid  "RBK_MONEY_SETTINGS_SAVED"
+msgstr "Settings saved"
+
+msgid  "RBK_MONEY_SAVED"
+msgstr "Saved"
+
+msgid  "RBK_MONEY_SETTINGS_SAVE_ERROR"
+msgstr "Not all fields have been saved"
+
+msgid  "RBK_MONEY_ERROR"
+msgstr "Error"
+
+msgid  "RBK_MONEY_CONFIRM_PAYMENT"
+msgstr "Confirm payment"
+
+msgid  "RBK_MONEY_CANCEL_PAYMENT"
+msgstr "Cancel payment"
+
+msgid  "RBK_MONEY_CREATE_PAYMENT_REFUND"
+msgstr "Create payment refund"
+
+msgid  "RBK_MONEY_CUSTOMER_READY"
+msgstr "Ready"
+
+msgid  "RBK_MONEY_CUSTOMER_UNREADY"
+msgstr "Unready"
+
+msgid  "RBK_MONEY_RECURRENT_SUCCESS"
+msgstr "Recurrent payment success: "
+
+msgid  "RBK_MONEY_SHADING_CVV"
+msgstr "Shading card cvv code"
+
+msgid  "RBK_MONEY_RECURRENT_PAYMENT"
+msgstr "Recurrent payment"
+
+msgid  "RBK_MONEY_RESPONSE_NOT_RECEIVED"
+msgstr "Response from RBKmoney is not received"
+
+msgid  "RBK_MONEY_REDIRECT_TO_PAYMENT_PAGE"
+msgstr "Now you will be redirected to the payment page."
+
+msgid  "RBK_MONEY_CLICK_BUTTON_PAY"
+msgstr "If this does not happen - click on the button Pay"
+
+msgid  "RBK_MONEY_ERROR_MESSAGE_PHP_VERSION"
+msgstr "The module requires PHP 5.5 or higher"
+
+msgid  "RBK_MONEY_ERROR_MESSAGE_CURL"
+msgstr "The module requires curl"
+
+msgid  "RBK_MONEY_SUCCESS_ORDER_STATUS"
+msgstr "Order status after payment"
+
+msgid  "RBK_MONEY_HOLD_ORDER_STATUS"
+msgstr "Order status with hold"
+
+msgid  "RBK_MONEY_CANCEL_ORDER_STATUS"
+msgstr "Order status after cancel hold"
+
+msgid  "RBK_MONEY_REFUND_ORDER_STATUS"
+msgstr "Order status after create refund"
+
+msgid  "RBK_MONEY_VAT_RATE"
+msgstr "Vat rate"
+
+msgid  "RBK_MONEY_DELIVERY_VAT_RATE"
+msgstr "Delivery vat rate"
+
+msgid  "RBK_MONEY_DELIVERY"
+msgstr "Delivery"
+
+msgid  "RBK_MONEY_CURRENCY"
+msgstr "Currency"
+
+msgid  "RBK_MONEY_CALLBACK_PAGE_ID"
+msgstr "Callback page id"
+
+msgid  "RBK_MONEY_PAYMENT_PAGE_ID"
+msgstr "Payment page id"
+
+msgid  "RBK_MONEY_LOGS"
+msgstr "Requests log RBKmoney"
+
+msgid  "RBK_MONEY_DELETE_LOGS"
+msgstr "Delete logs"
+
+msgid  "RBK_MONEY_DOWNLOAD_LOGS"
+msgstr "Download logs"
+
+msgid  "RBK_MONEY_LOGS_DELETED"
+msgstr "Logs deleted"
+
+msgid  "RBK_MONEY_SAVE_LOGS"
+msgstr "Write logs RBKmoney"
+
+msgid  "RBK_MONEY_FORBIDDEN_MESSAGE"
+msgstr "Wrong authorization data"
