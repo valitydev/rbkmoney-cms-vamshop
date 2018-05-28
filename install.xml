@@ -1,0 +1,8 @@
+<contrib>
+    <addfile>
+        <file name="ModuleRbkmoney" />
+    </addfile>
+    <addfile>
+        <file name="Payment/Controller/RbkmoneyController.php" />
+    </addfile>
+</contrib>
