@@ -35,6 +35,11 @@ class Client implements ClientInterface
     const AUTHORIZATION = 'Authorization: Bearer ';
     const REQUEST_ID = 'X-Request-ID: ';
 
+    /**
+     * http-заголовки
+     *
+     * @var array
+     */
     private $headers = [];
 
     /**
@@ -71,7 +76,7 @@ class Client implements ClientInterface
     }
 
     /**
-     * Устанавливает хедеры
+     * Устанавливает http-заголовки
      *
      * @return void
      */
