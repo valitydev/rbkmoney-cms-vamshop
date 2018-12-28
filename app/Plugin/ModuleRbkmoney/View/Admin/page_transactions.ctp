@@ -81,20 +81,8 @@ if (!empty($rbkmoneyTransactions['error'])) {
 
     $content .= '</table><table><tr>';
 
-    if (!empty($this->previousUrl)) {
-        $content .= '<td><a href="' . $rbkmoneyTransactions['previousUrl'] . '"><<' . __d(RBK_MONEY_MODULE, 'RBK_MONEY_PREVIOUS') . '</a></td>';
-    }
-
-    foreach ($rbkmoneyTransactions['pages'] as $page) {
-        if ($page['isCurrent'] || '...' === $page['num']) {
-            $content .= '<td>' . $page['num'] . '</td>';
-        } else {
-            $content .= '<td><a href="' . $page['url'] . '">' . $page['num'] . '</a></td>';
-        }
-    }
-
-    if (!empty($this->nextUrl)) {
-        $content .= '<td><a href="' . $rbkmoneyTransactions['nextUrl'] . '">' . __d(RBK_MONEY_MODULE, 'NEXT') . ' >></a></td>';
+    if (!empty($rbkmoneyTransactions['nextUrl'])) {
+        $content .= '<td><a href="' . $rbkmoneyTransactions['nextUrl'] . '">' . __d(RBK_MONEY_MODULE, 'RBK_MONEY_NEXT') . ' >></a></td>';
     }
 
     $content .= '</tr></table>';

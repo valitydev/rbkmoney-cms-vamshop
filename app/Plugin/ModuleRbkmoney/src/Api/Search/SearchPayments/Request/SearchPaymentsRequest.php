@@ -128,6 +128,11 @@ class SearchPaymentsRequest extends RBKmoneyDataObject implements GetRequestInte
     protected $paymentAmount;
 
     /**
+     * @var string | null
+     */
+    protected $continuationToken;
+
+    /**
      * @param string   $shopId
      * @param DateTime $fromTime
      * @param DateTime $toTime
@@ -139,6 +144,18 @@ class SearchPaymentsRequest extends RBKmoneyDataObject implements GetRequestInte
         $this->fromTime = $fromTime->format(DATE_ATOM);
         $this->toTime = $toTime->format(DATE_ATOM);
         $this->limit = $limit;
+    }
+
+    /**
+     * @param string $token
+     *
+     * @return SearchPaymentsRequest
+     */
+    public function setContinuationToken($token)
+    {
+        $this->continuationToken = $token;
+
+        return $this;
     }
 
     /**
@@ -271,7 +288,7 @@ class SearchPaymentsRequest extends RBKmoneyDataObject implements GetRequestInte
     public function setCardNumberMask($cardNumberMask)
     {
         if (!preg_match('/^\d{2,4}$/', $cardNumberMask)) {
-            throw new WrongDataException(__d(RBK_MONEY_MODULE, 'RBK_MONEY_WRONG_VALUE') . ' `cardNumberMask`', HTTP_CODE_BAD_REQUEST);
+            throw new WrongDataException(__('wrong_value') . ' `cardNumberMask`', HTTP_CODE_BAD_REQUEST);
         }
 
         $this->cardNumberMask = $cardNumberMask;

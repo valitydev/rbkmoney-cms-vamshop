@@ -14,7 +14,6 @@ use src\Client\Sender;
 use src\Exceptions\RBKmoneyException;
 use src\Exceptions\RequestException;
 use src\Helpers\Logger;
-use src\Helpers\Paginator;
 
 class AdminController extends ModuleRbkmoneyAppController
 {
@@ -294,8 +293,6 @@ class AdminController extends ModuleRbkmoneyAppController
             throw new WrongDataException(__d(RBK_MONEY_MODULE, 'RBK_MONEY_ERROR_API_KEY_IS_NOT_VALID', HTTP_CODE_BAD_REQUEST));
         }
 
-        $page = (empty($_GET['page']) || $_GET['page'] < 1) ? 1 : $_GET['page'];
-
         if (!empty($_POST['date_from'])) {
             $dateFrom = new DateTime($_POST['date_from']);
         } elseif (!empty($_GET['date_from'])) {
@@ -327,7 +324,12 @@ class AdminController extends ModuleRbkmoneyAppController
         $sender = new Sender(new Client($this->settings['apiKey'], $shopId, RBK_MONEY_API_URL_SETTING));
 
         $paymentRequest = new SearchPaymentsRequest($shopId, $dateFrom, $dateTo, $limit);
-        $paymentRequest->setOffset(($page * $limit) - $limit);
+
+        $token = $_GET['token'];
+
+        if (!empty($token)) {
+            $paymentRequest->setContinuationToken($token);
+        }
 
         $payments = $sender->sendSearchPaymentsRequest($paymentRequest);
 
@@ -363,16 +365,14 @@ class AdminController extends ModuleRbkmoneyAppController
             ];
         }
 
-        $pagePath = RBK_MONEY_PAGE_TRANSACTIONS . '?page=(:num)';
-        $date = "date_from={$dateFrom->format('d.m.Y')}&date_to={$dateTo->format('d.m.Y')}";
-
-        $paginator = new Paginator($payments->totalCount, $limit, $page, "$pagePath&$date");
+        if (!empty($payments->continuationToken)) {
+            $pagePath = RBK_MONEY_PAGE_TRANSACTIONS . "?token=$payments->continuationToken";
+            $nextUrl = "$pagePath&date_from={$dateFrom->format('d.m.Y')}&date_to={$dateTo->format('d.m.Y')}";
+        }
 
         return [
             'transactions' => $transactions,
-            'previousUrl' => $paginator->getPrevUrl(),
-            'nextUrl' => $paginator->getNextUrl(),
-            'pages' => $paginator->getPages(),
+            'nextUrl' => empty($nextUrl) ? null : $nextUrl,
             'dateFrom' => $dateFrom->format('Y-m-d'),
             'dateTo' => $dateTo->format('Y-m-d'),
         ];
