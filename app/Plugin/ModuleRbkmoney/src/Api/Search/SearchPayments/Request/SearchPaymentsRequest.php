@@ -288,7 +288,7 @@ class SearchPaymentsRequest extends RBKmoneyDataObject implements GetRequestInte
     public function setCardNumberMask($cardNumberMask)
     {
         if (!preg_match('/^\d{2,4}$/', $cardNumberMask)) {
-            throw new WrongDataException(__('wrong_value') . ' `cardNumberMask`', HTTP_CODE_BAD_REQUEST);
+            throw new WrongDataException(__d(RBK_MONEY_MODULE, 'RBK_MONEY_WRONG_VALUE') . ' `cardNumberMask`', HTTP_CODE_BAD_REQUEST);
         }
 
         $this->cardNumberMask = $cardNumberMask;
